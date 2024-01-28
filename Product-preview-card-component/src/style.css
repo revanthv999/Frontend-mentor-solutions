@@ -1,0 +1,102 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+    max-width: 596px;
+    position: absolute;
+    margin: auto;
+    inset: 0;
+    max-height: 447px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+section.img{
+    background-image: url("../images/image-product-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+section.details{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1.4rem;
+    padding: 1.8rem;
+}
+
+section.details .perfume{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: hsl(228, 12%, 48%);
+}
+
+section.details h1{
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: hsl(212, 21%, 14%);
+}
+
+section.details p.info{
+    color: hsl(228, 12%, 48%);
+    line-height: 25px;
+}
+
+section.details h2{
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    color: #3D8168;
+    font-weight: 700;
+    position: relative;
+}
+
+section.details h2::after{
+    content: "$$169.99";
+    position: absolute;
+    font-size: 12px;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+button{
+    color: hsl(0, 0%, 100%);
+    background-color: #3D8168;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-family: "Montserrat" , serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+button:hover{
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+}
