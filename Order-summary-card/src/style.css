@@ -1,0 +1,126 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    background-size: 160%;
+}
+
+.container{
+    position: absolute;
+    margin: auto;
+    inset: 0;
+    max-width: 440px;
+    height: fit-content;
+    border-radius: 18px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    overflow: hidden;
+    box-shadow: rgba(158, 158, 254, 0.2) 0px 7px 29px 10px;
+}
+
+.img{
+    background-image: url("../images/illustration-hero.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 3rem;
+}
+
+h1{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.info{
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+}
+
+.order_details{
+    display: flex;
+    padding: 1rem;
+    background-color: hsl(225, 100%, 98%);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    width: 100%;
+    margin: 1rem;
+}
+.icon{
+    background-image: url("../images/icon-music.svg");
+    height: 45px;
+    width: 45px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+h2{
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.plan{
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.change{
+    margin-left: 3rem;
+    color: hsl(245, 75%, 52%);
+}
+
+.proceed{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-family: "Red Hat Display" , sans-serif;
+    font-weight: 700;
+    border-radius: 12px;
+    padding: 0.8rem 1rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    box-shadow: rgba(175, 170, 179, 0.647) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
+.cancel{
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    font-family: "Red Hat Display" , sans-serif;
+    padding: 0.8rem 1rem;
+    width: 100%;
+    border-radius: 12px;
+    border: none;
+    background-color: transparent;
+}
+
+.cancel:hover{
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+.proceed:hover{
+    background-color: hsl(261, 84%, 66%);
+}
+
+.change{
+    color: hsl(261, 84%, 66%);
+}
